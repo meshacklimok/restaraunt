@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Order Your Meal - Sunrise Restaurant</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        form {
+            margin-top: 20px;
+        }
+
+        h2 {
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+
+<body>
+
+<section class="order-section">
+
+    <h2>Order Your Meal</h2>
+
+    <form action="#" method="post" id="orderForm">
+
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="meal">Select Meal:</label><br>
+
+        <select id="meal" name="meal">
+            <option value="Pizza">Pizza</option>
+            <option value="Burger">Burger</option>
+            <option value="Chicken Wrap">Chicken Wrap</option>
+            <option value="Green Tea">Green Tea</option>
+        </select><br><br>
+
+        <label for="contact">Phone or Email:</label><br>
+        <input type="text" id="contact" name="contact" required><br><br>
+
+        <label>Delivery Method:</label><br>
+
+        <input type="radio" name="delivery" value="delivery">
+        Home Delivery<br>
+
+        <input type="radio" name="delivery" value="pickup">
+        Pick Up<br><br>
+
+        <input type="submit" value="Place Order">
+
+    </form>
+
+</section>
+
+
+<script>
+    document.querySelector("h2").style.color = "#22c55e";
+</script>
+
+<!-- External JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
